@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../LanguageContext';
-import memoryBg from '../assets/images/memory_game_bg.png';
 
 const EMOJIS = ['🦁', '🐯', '🐘', '🦒', '🦓', '🦘', '🦙', '🦩', '🐨', '🐼', '🦊', '🐸'];
 
@@ -128,7 +127,7 @@ const MemoryGame = ({ onComplete, onBack }) => {
 
   return (
     <div className="page-container memory-game-container" style={{ 
-      backgroundImage: `url(${memoryBg})`,
+      backgroundImage: 'url("/images/memory_game_bg.png")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       color: 'var(--text-dark)',

@@ -41,8 +41,7 @@ const MatchingGame = ({ onComplete, onBack }) => {
       success: 'congratulations.mp3',
       error: 'fail.mp3'
     };
-    const audioUrl = new URL(`../assets/audio/${soundMap[type]}`, import.meta.url).href;
-    const audio = new Audio(audioUrl);
+    const audio = new Audio(`/audio/${soundMap[type]}`);
     audio.play().catch(() => console.log(`Audio ${type} not found`));
   };
 
@@ -163,7 +162,7 @@ const MatchingGame = ({ onComplete, onBack }) => {
                   position: 'relative'
                 }}
               >
-                <img src={new URL(`../assets/images/${m.male}`, import.meta.url).href} alt="Male" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />
+                <img src={`/images/${m.male}`} alt="Male" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />
               </motion.div>
             ))}
           </AnimatePresence>
@@ -194,7 +193,7 @@ const MatchingGame = ({ onComplete, onBack }) => {
                   boxShadow: feedback?.id === f.id && feedback.type === 'success' ? '0 0 20px white' : 'none'
                 }}
               >
-                <img src={new URL(`../assets/images/${f.female}`, import.meta.url).href} alt="Female" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '15px' }} />
+                <img src={`/images/${f.female}`} alt="Female" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '15px' }} />
               </motion.div>
             ))}
           </AnimatePresence>
