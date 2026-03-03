@@ -162,7 +162,7 @@ const MatchingGame = ({ onComplete, onBack }) => {
                   position: 'relative'
                 }}
               >
-                <img src={`/src/assets/images/${m.male}`} alt="Male" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />
+                <img src={`/images/${m.male}`} alt="Male" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />
               </motion.div>
             ))}
           </AnimatePresence>
@@ -193,7 +193,7 @@ const MatchingGame = ({ onComplete, onBack }) => {
                   boxShadow: feedback?.id === f.id && feedback.type === 'success' ? '0 0 20px white' : 'none'
                 }}
               >
-                <img src={`/src/assets/images/${f.female}`} alt="Female" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '15px' }} />
+                <img src={`/images/${f.female}`} alt="Female" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '15px' }} />
               </motion.div>
             ))}
           </AnimatePresence>

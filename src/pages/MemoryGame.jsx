@@ -127,7 +127,7 @@ const MemoryGame = ({ onComplete, onBack }) => {
 
   return (
     <div className="page-container memory-game-container" style={{ 
-      backgroundImage: 'url("/src/assets/images/memory_game_bg.png")',
+      backgroundImage: 'url("/images/memory_game_bg.png")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       color: 'var(--text-dark)',
